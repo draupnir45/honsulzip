@@ -9,24 +9,24 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, HSRecipeTime){
-    HSRecipeTimeTo5Min, // =@"5분 미만"
-    HSRecipeTimeTo10Min,
-    HSRecipeTimeTo15Min,
-    HSRecipeTimeTo20Min,
-    HSRecipeTimeOver20Min
+    HSRecipeTimeTo5Min, // 5분 미만
+    HSRecipeTimeTo10Min, // 10분 미만
+    HSRecipeTimeTo15Min, // 15분 미만
+    HSRecipeTimeTo20Min, // 20분 미만
+    HSRecipeTimeOver20Min // 20분 이상
 };
 
 typedef NS_ENUM(NSUInteger, HSRecipeCost) {
-    HSRecipeCostTo2000Won,
-    HSRecipeCostTo5000Won,
-    HSRecipeCostTo10000Won,
-    HSRecipeCostOver10000Won
+    HSRecipeCostTo2000Won, //2000원 미만
+    HSRecipeCostTo5000Won, //5000원 미만
+    HSRecipeCostTo10000Won, //10000원 미만
+    HSRecipeCostOver10000Won // 10000원 이상
 };
 
 typedef NS_ENUM(NSUInteger, HSDirnkPrefer) {
-    HSDirnkPreferNone,
-    HSDirnkPreferGood,
-    HSDirnkPreferBetter
+    HSDirnkPreferNone, // 관계없음
+    HSDirnkPreferGood, // 나름 어울림
+    HSDirnkPreferBetter // 짱 어울림
 };
 
 @interface HSRecipe : NSObject
@@ -38,6 +38,8 @@ typedef NS_ENUM(NSUInteger, HSDirnkPrefer) {
 @property (nonatomic) NSArray *ingrediantsArr;
 @property (nonatomic) NSArray *detailArr;
 @property (nonatomic) NSString *imageName;
+@property (nonatomic) NSString *shortDescription;
 
+- (instancetype)initWithData:(NSDictionary *)data;
 
 @end

@@ -15,6 +15,19 @@
 		9173D7FB1E70607000959954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9173D7F91E70607000959954 /* LaunchScreen.storyboard */; };
 		9173D8041E70721700959954 /* HSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173D8031E70721700959954 /* HSRecipe.m */; };
 		9173D8061E70728700959954 /* recipe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9173D8051E70728700959954 /* recipe1.jpg */; };
+		9178716A1E708001001F303C /* HSRecipeDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 917871681E708001001F303C /* HSRecipeDataCenter.m */; };
+		9178716B1E708001001F303C /* HSRecipeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917871691E708001001F303C /* HSRecipeList.plist */; };
+		9178716E1E708D09001F303C /* ViewControllerThird.m in Sources */ = {isa = PBXBuildFile; fileRef = 9178716D1E708D09001F303C /* ViewControllerThird.m */; };
+		917871711E709587001F303C /* ViewControllerFourth.m in Sources */ = {isa = PBXBuildFile; fileRef = 917871701E709587001F303C /* ViewControllerFourth.m */; };
+		917871811E70A3C9001F303C /* beerIcon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 917871781E70A3C9001F303C /* beerIcon@2x.jpg */; };
+		917871831E70A3C9001F303C /* sojuIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717A1E70A3C9001F303C /* sojuIcon.jpg */; };
+		917871841E70A3C9001F303C /* beerIcon@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717B1E70A3C9001F303C /* beerIcon@3x.jpg */; };
+		917871851E70A3C9001F303C /* sojuIcon@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717C1E70A3C9001F303C /* sojuIcon@3x.jpg */; };
+		917871861E70A3C9001F303C /* sojuIcon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717D1E70A3C9001F303C /* sojuIcon@2x.jpg */; };
+		917871871E70A3C9001F303C /* wineIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717E1E70A3C9001F303C /* wineIcon.jpg */; };
+		917871881E70A3C9001F303C /* wineIcon@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178717F1E70A3C9001F303C /* wineIcon@3x.jpg */; };
+		917871891E70A3C9001F303C /* wineIcon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 917871801E70A3C9001F303C /* wineIcon@2x.jpg */; };
+		9178718B1E70A4A5001F303C /* beerIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9178718A1E70A4A5001F303C /* beerIcon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +44,22 @@
 		9173D8021E70721700959954 /* HSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipe.h; sourceTree = "<group>"; };
 		9173D8031E70721700959954 /* HSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipe.m; sourceTree = "<group>"; };
 		9173D8051E70728700959954 /* recipe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe1.jpg; sourceTree = "<group>"; };
+		917871671E708001001F303C /* HSRecipeDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipeDataCenter.h; sourceTree = "<group>"; };
+		917871681E708001001F303C /* HSRecipeDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipeDataCenter.m; sourceTree = "<group>"; };
+		917871691E708001001F303C /* HSRecipeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HSRecipeList.plist; sourceTree = "<group>"; };
+		9178716C1E708D09001F303C /* ViewControllerThird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThird.h; sourceTree = "<group>"; };
+		9178716D1E708D09001F303C /* ViewControllerThird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThird.m; sourceTree = "<group>"; };
+		9178716F1E709587001F303C /* ViewControllerFourth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFourth.h; sourceTree = "<group>"; };
+		917871701E709587001F303C /* ViewControllerFourth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFourth.m; sourceTree = "<group>"; };
+		917871781E70A3C9001F303C /* beerIcon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beerIcon@2x.jpg"; sourceTree = "<group>"; };
+		9178717A1E70A3C9001F303C /* sojuIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sojuIcon.jpg; sourceTree = "<group>"; };
+		9178717B1E70A3C9001F303C /* beerIcon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beerIcon@3x.jpg"; sourceTree = "<group>"; };
+		9178717C1E70A3C9001F303C /* sojuIcon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sojuIcon@3x.jpg"; sourceTree = "<group>"; };
+		9178717D1E70A3C9001F303C /* sojuIcon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sojuIcon@2x.jpg"; sourceTree = "<group>"; };
+		9178717E1E70A3C9001F303C /* wineIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wineIcon.jpg; sourceTree = "<group>"; };
+		9178717F1E70A3C9001F303C /* wineIcon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wineIcon@3x.jpg"; sourceTree = "<group>"; };
+		917871801E70A3C9001F303C /* wineIcon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wineIcon@2x.jpg"; sourceTree = "<group>"; };
+		9178718A1E70A4A5001F303C /* beerIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beerIcon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +96,25 @@
 				9173D7EF1E70607000959954 /* AppDelegate.m */,
 				9173D8021E70721700959954 /* HSRecipe.h */,
 				9173D8031E70721700959954 /* HSRecipe.m */,
+				917871671E708001001F303C /* HSRecipeDataCenter.h */,
+				917871681E708001001F303C /* HSRecipeDataCenter.m */,
 				9173D7F11E70607000959954 /* ViewController.h */,
 				9173D7F21E70607000959954 /* ViewController.m */,
+				9178716C1E708D09001F303C /* ViewControllerThird.h */,
+				9178716D1E708D09001F303C /* ViewControllerThird.m */,
+				9178716F1E709587001F303C /* ViewControllerFourth.h */,
+				917871701E709587001F303C /* ViewControllerFourth.m */,
+				917871691E708001001F303C /* HSRecipeList.plist */,
 				9173D7F41E70607000959954 /* Main.storyboard */,
+				9178718A1E70A4A5001F303C /* beerIcon.jpg */,
+				917871781E70A3C9001F303C /* beerIcon@2x.jpg */,
+				9178717B1E70A3C9001F303C /* beerIcon@3x.jpg */,
+				9178717A1E70A3C9001F303C /* sojuIcon.jpg */,
+				9178717C1E70A3C9001F303C /* sojuIcon@3x.jpg */,
+				9178717D1E70A3C9001F303C /* sojuIcon@2x.jpg */,
+				9178717E1E70A3C9001F303C /* wineIcon.jpg */,
+				9178717F1E70A3C9001F303C /* wineIcon@3x.jpg */,
+				917871801E70A3C9001F303C /* wineIcon@2x.jpg */,
 				9173D8051E70728700959954 /* recipe1.jpg */,
 				9173D7F71E70607000959954 /* Assets.xcassets */,
 				9173D7F91E70607000959954 /* LaunchScreen.storyboard */,
@@ -146,9 +191,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9178718B1E70A4A5001F303C /* beerIcon.jpg in Resources */,
+				917871891E70A3C9001F303C /* wineIcon@2x.jpg in Resources */,
 				9173D7FB1E70607000959954 /* LaunchScreen.storyboard in Resources */,
+				917871811E70A3C9001F303C /* beerIcon@2x.jpg in Resources */,
+				917871871E70A3C9001F303C /* wineIcon.jpg in Resources */,
 				9173D7F81E70607000959954 /* Assets.xcassets in Resources */,
 				9173D7F61E70607000959954 /* Main.storyboard in Resources */,
+				917871851E70A3C9001F303C /* sojuIcon@3x.jpg in Resources */,
+				917871831E70A3C9001F303C /* sojuIcon.jpg in Resources */,
+				9178716B1E708001001F303C /* HSRecipeList.plist in Resources */,
+				917871881E70A3C9001F303C /* wineIcon@3x.jpg in Resources */,
+				917871841E70A3C9001F303C /* beerIcon@3x.jpg in Resources */,
+				917871861E70A3C9001F303C /* sojuIcon@2x.jpg in Resources */,
 				9173D8061E70728700959954 /* recipe1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,10 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9178716E1E708D09001F303C /* ViewControllerThird.m in Sources */,
 				9173D8041E70721700959954 /* HSRecipe.m in Sources */,
 				9173D7F31E70607000959954 /* ViewController.m in Sources */,
 				9173D7F01E70607000959954 /* AppDelegate.m in Sources */,
+				917871711E709587001F303C /* ViewControllerFourth.m in Sources */,
 				9173D7ED1E70607000959954 /* main.m in Sources */,
+				9178716A1E708001001F303C /* HSRecipeDataCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +378,7 @@
 				9173D8011E70607000959954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

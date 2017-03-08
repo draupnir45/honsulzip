@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "HSRecipeDataCenter.h"
+#import "HSRecipe.h"
 
 @interface ViewController ()
+
+@property NSArray *dataArray;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *detail;
 
 @end
 
@@ -17,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.dataArray = [HSRecipeDataCenter sharedData].appData;
+    HSRecipe *testRecipe = [[HSRecipe alloc]initWithData:self.dataArray[0]];
+    
 }
 
 

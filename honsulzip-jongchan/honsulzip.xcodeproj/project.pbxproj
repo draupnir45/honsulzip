@@ -14,8 +14,9 @@
 		B93C4FBE1E705DB0005FE565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93C4FBD1E705DB0005FE565 /* Assets.xcassets */; };
 		B93C4FC11E705DB0005FE565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93C4FBF1E705DB0005FE565 /* LaunchScreen.storyboard */; };
 		B93C4FCD1E705DDF005FE565 /* HSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C4FC91E705DDF005FE565 /* HSRecipe.m */; };
-		B93C4FCE1E705DDF005FE565 /* HSRecipeDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C4FCB1E705DDF005FE565 /* HSRecipeDataCenter.m */; };
 		B93C4FCF1E705DDF005FE565 /* HSRecipeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */; };
+		B963E28A1E70711000B00B5E /* HSRecipeDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B963E2891E70711000B00B5E /* HSRecipeDataCenter.m */; };
+		B963E28C1E7071A900B00B5E /* recipe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B963E28B1E7071A900B00B5E /* recipe1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,10 @@
 		B93C4FC21E705DB0005FE565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93C4FC81E705DDF005FE565 /* HSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipe.h; sourceTree = "<group>"; };
 		B93C4FC91E705DDF005FE565 /* HSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipe.m; sourceTree = "<group>"; };
-		B93C4FCA1E705DDF005FE565 /* HSRecipeDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipeDataCenter.h; sourceTree = "<group>"; };
-		B93C4FCB1E705DDF005FE565 /* HSRecipeDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipeDataCenter.m; sourceTree = "<group>"; };
 		B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HSRecipeList.plist; sourceTree = "<group>"; };
+		B963E2881E70711000B00B5E /* HSRecipeDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipeDataCenter.h; sourceTree = "<group>"; };
+		B963E2891E70711000B00B5E /* HSRecipeDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipeDataCenter.m; sourceTree = "<group>"; };
+		B963E28B1E7071A900B00B5E /* recipe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,10 @@
 				B93C4FB81E705DB0005FE565 /* ViewController.m */,
 				B93C4FC81E705DDF005FE565 /* HSRecipe.h */,
 				B93C4FC91E705DDF005FE565 /* HSRecipe.m */,
-				B93C4FCA1E705DDF005FE565 /* HSRecipeDataCenter.h */,
-				B93C4FCB1E705DDF005FE565 /* HSRecipeDataCenter.m */,
+				B963E2881E70711000B00B5E /* HSRecipeDataCenter.h */,
+				B963E2891E70711000B00B5E /* HSRecipeDataCenter.m */,
 				B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */,
+				B963E28B1E7071A900B00B5E /* recipe1.jpg */,
 				B93C4FBA1E705DB0005FE565 /* Main.storyboard */,
 				B93C4FBD1E705DB0005FE565 /* Assets.xcassets */,
 				B93C4FBF1E705DB0005FE565 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			files = (
 				B93C4FC11E705DB0005FE565 /* LaunchScreen.storyboard in Resources */,
 				B93C4FBE1E705DB0005FE565 /* Assets.xcassets in Resources */,
+				B963E28C1E7071A900B00B5E /* recipe1.jpg in Resources */,
 				B93C4FBC1E705DB0005FE565 /* Main.storyboard in Resources */,
 				B93C4FCF1E705DDF005FE565 /* HSRecipeList.plist in Resources */,
 			);
@@ -168,8 +172,8 @@
 				B93C4FCD1E705DDF005FE565 /* HSRecipe.m in Sources */,
 				B93C4FB91E705DB0005FE565 /* ViewController.m in Sources */,
 				B93C4FB61E705DB0005FE565 /* AppDelegate.m in Sources */,
+				B963E28A1E70711000B00B5E /* HSRecipeDataCenter.m in Sources */,
 				B93C4FB31E705DB0005FE565 /* main.m in Sources */,
-				B93C4FCE1E705DDF005FE565 /* HSRecipeDataCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +330,7 @@
 				B93C4FC71E705DB0005FE565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

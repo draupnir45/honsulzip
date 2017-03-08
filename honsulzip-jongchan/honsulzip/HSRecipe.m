@@ -10,5 +10,20 @@
 
 @implementation HSRecipe
 
+- (instancetype)initWithData:(NSDictionary *)data
+{
+    self = [super init];
+    if (self) {
+        self.name = [data objectForKey:@"name"];
+        self.time = [[data objectForKey:@"time"] integerValue];
+        self.cost = [[data objectForKey:@"cost"] integerValue];
+        self.drinkDict = [data objectForKey:@"drinkDict"];
+        self.ingrediantsArr = [data objectForKey:@"ingrediantsArr"];
+        self.detailArr = [data objectForKey:@"detailArr"];
+        self.imageName = [data objectForKey:@"imageName"];
+        self.shortDescription = [data objectForKey:@"shortDescription"];
+    }
+    return self;
+}
 
 @end

@@ -4,7 +4,45 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string></string>
+		<string>돼지고기 숙주볶음</string>
+		<key>time</key>
+		<integer>1</integer>
+		<key>cost</key>
+		<string>2</string>
+		<key>drinkDict</key>
+		<dict>
+			<key>beer</key>
+			<integer>1</integer>
+			<key>soju</key>
+			<integer>2</integer>
+			<key>wine</key>
+			<integer>0</integer>
+			<key>whiskey</key>
+			<integer>0</integer>
+			<key>matkori</key>
+			<integer>0</integer>
+			<key>somac</key>
+			<integer>2</integer>
+			<key>cocktail</key>
+			<integer>0</integer>
+		</dict>
+		<key>ingrediantsArr</key>
+		<array>
+			<string>삼겹살</string>
+			<string>숙주</string>
+			<string>카놀라유</string>
+			<string>대파</string>
+		</array>
+		<key>detailArr</key>
+		<array>
+			<string>먼저 삼겹살을 먹기 적당한 크기로 썰어줍니다.</string>
+			<string>카놀라유를 넣고 후라이팬을 달굽니다.</string>
+			<string>막 볶아버려욧</string>
+		</array>
+		<key>imageName</key>
+		<string>recipe1</string>
+		<key>shortDescription</key>
+		<string>숙주와 돼지고기의 운명적인 만남</string>
 	</dict>
 </array>
 </plist>

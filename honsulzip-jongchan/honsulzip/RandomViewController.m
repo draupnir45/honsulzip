@@ -79,7 +79,7 @@
     
 
     
-    for (NSInteger i = 0;  i < 30; i++) {
+    for (NSInteger i = 0;  i < 31; i++) {
         
         
         [NSTimer scheduledTimerWithTimeInterval:0.07*i target:self selector:@selector(changethis) userInfo:nil repeats:NO];

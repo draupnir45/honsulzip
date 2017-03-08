@@ -13,6 +13,8 @@
 		9173D7F61E70607000959954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9173D7F41E70607000959954 /* Main.storyboard */; };
 		9173D7F81E70607000959954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9173D7F71E70607000959954 /* Assets.xcassets */; };
 		9173D7FB1E70607000959954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9173D7F91E70607000959954 /* LaunchScreen.storyboard */; };
+		9173D8041E70721700959954 /* HSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173D8031E70721700959954 /* HSRecipe.m */; };
+		9173D8061E70728700959954 /* recipe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9173D8051E70728700959954 /* recipe1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		9173D7F71E70607000959954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9173D7FA1E70607000959954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9173D7FC1E70607000959954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9173D8021E70721700959954 /* HSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipe.h; sourceTree = "<group>"; };
+		9173D8031E70721700959954 /* HSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipe.m; sourceTree = "<group>"; };
+		9173D8051E70728700959954 /* recipe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +65,12 @@
 			children = (
 				9173D7EE1E70607000959954 /* AppDelegate.h */,
 				9173D7EF1E70607000959954 /* AppDelegate.m */,
+				9173D8021E70721700959954 /* HSRecipe.h */,
+				9173D8031E70721700959954 /* HSRecipe.m */,
 				9173D7F11E70607000959954 /* ViewController.h */,
 				9173D7F21E70607000959954 /* ViewController.m */,
 				9173D7F41E70607000959954 /* Main.storyboard */,
+				9173D8051E70728700959954 /* recipe1.jpg */,
 				9173D7F71E70607000959954 /* Assets.xcassets */,
 				9173D7F91E70607000959954 /* LaunchScreen.storyboard */,
 				9173D7FC1E70607000959954 /* Info.plist */,
@@ -141,6 +149,7 @@
 				9173D7FB1E70607000959954 /* LaunchScreen.storyboard in Resources */,
 				9173D7F81E70607000959954 /* Assets.xcassets in Resources */,
 				9173D7F61E70607000959954 /* Main.storyboard in Resources */,
+				9173D8061E70728700959954 /* recipe1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9173D8041E70721700959954 /* HSRecipe.m in Sources */,
 				9173D7F31E70607000959954 /* ViewController.m in Sources */,
 				9173D7F01E70607000959954 /* AppDelegate.m in Sources */,
 				9173D7ED1E70607000959954 /* main.m in Sources */,

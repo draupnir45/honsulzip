@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RandomViewController.h
 //  honsulzip
 //
 //  Created by 박종찬 on 2017. 3. 9..
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RandomViewController : UIViewController
 
 @end
-

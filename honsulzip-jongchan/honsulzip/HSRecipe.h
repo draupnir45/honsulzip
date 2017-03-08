@@ -38,6 +38,7 @@ typedef NS_ENUM(NSUInteger, HSDirnkPrefer) {
 @property (nonatomic) NSArray *ingrediantsArr;
 @property (nonatomic) NSArray *detailArr;
 @property (nonatomic) NSString *imageName;
+@property (nonatomic) NSString *imageName2;
 @property (nonatomic) NSString *shortDescription;
 
 - (instancetype)initWithData:(NSDictionary *)data;

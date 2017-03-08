@@ -21,6 +21,7 @@
         self.ingrediantsArr = [data objectForKey:@"ingrediantsArr"];
         self.detailArr = [data objectForKey:@"detailArr"];
         self.imageName = [data objectForKey:@"imageName"];
+        self.imageName2 = [data objectForKey:@"imageName2"];
         self.shortDescription = [data objectForKey:@"shortDescription"];
     }
     return self;

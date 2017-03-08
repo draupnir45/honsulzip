@@ -8,6 +8,14 @@
 
 #import "AppDelegate.h"
 
+@implementation UIColor (UNTAdditions)
+
++ (UIColor *)unt_bloodOrangeColor {
+    return [UIColor colorWithRed:255.0f / 255.0f green:77.0f / 255.0f blue:0.0 alpha:1.0f];
+}
+
+@end
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +24,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self.window setTintColor:[UIColor unt_bloodOrangeColor]];
     // Override point for customization after application launch.
     return YES;
 }

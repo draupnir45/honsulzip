@@ -41,6 +41,8 @@
 		</array>
 		<key>imageName</key>
 		<string>recipe1</string>
+		<key>imageName2</key>
+		<string>recipe1</string>
 		<key>shortDescription</key>
 		<string>숙주와 돼지고기의 운명적인 만남</string>
 	</dict>

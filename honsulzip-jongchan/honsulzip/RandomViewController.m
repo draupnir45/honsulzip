@@ -28,25 +28,20 @@
     [self.navigationController setNavigationBarHidden:YES];
     
     [self.randomImage.layer setCornerRadius:self.randomImage.bounds.size.width/2];
-    
     [self.randomImage.layer setBorderColor:[tintColorFromView CGColor]];
     [self.randomImage.layer setBorderWidth:1];
-    
     
     [self.randomImageBorder.layer setCornerRadius:self.randomImageBorder.bounds.size.width/2];
     [self.randomImageBorder.layer setBorderColor:[tintColorFromView CGColor]];
     [self.randomImageBorder.layer setBorderWidth:2];
     
-    [self.makeButton.layer setCornerRadius:self.makeButton.bounds.size.height / 2
-     ];
+    [self.makeButton.layer setCornerRadius:self.makeButton.bounds.size.height / 2];
     [self.makeButton setBackgroundColor:tintColorFromView];
     
-    
     NSMutableArray *imageArr = [[NSMutableArray alloc] init];
-    
 
-        [imageArr addObject:[UIImage imageNamed:@"recipe1.jpg"]];
-        [imageArr addObject:[UIImage imageNamed:@"recipe2.jpg"]];
+    [imageArr addObject:[UIImage imageNamed:@"recipe1.jpg"]];
+    [imageArr addObject:[UIImage imageNamed:@"recipe2.jpg"]];
     
     self.imgArray = imageArr;
     

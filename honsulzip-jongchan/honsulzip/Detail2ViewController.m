@@ -6,15 +6,15 @@
 //  Copyright © 2017년 Jongchan Park. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "Detail2ViewController.h"
 #import "RandomViewController.h"
 
-@interface DetailViewController ()
+@interface Detail2ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *recipeDetailBtn;
 
 @end
 
-@implementation DetailViewController
+@implementation Detail2ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

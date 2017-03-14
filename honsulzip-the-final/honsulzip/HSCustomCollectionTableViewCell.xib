@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HSCustomCollectionTableViewCell" rowHeight="250" id="UBT-m1-h8R" customClass="HSCustomCollectionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBT-m1-h8R" id="htM-ZP-GNp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-ll-TxA">
+                        <rect key="frame" x="0.5" y="0.0" width="375" height="250"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="xz4-2s-l3j">
+                            <size key="itemSize" width="168" height="250"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HSCollectionViewCell" id="LVF-os-dTL">
+                                <rect key="frame" x="16" y="0.0" width="168" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="168" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="oUU-ll-TxA" firstAttribute="width" secondItem="UBT-m1-h8R" secondAttribute="width" id="3Ar-tG-6Dg"/>
+                <constraint firstItem="oUU-ll-TxA" firstAttribute="height" secondItem="UBT-m1-h8R" secondAttribute="height" id="5ra-aw-jTy"/>
+                <constraint firstItem="oUU-ll-TxA" firstAttribute="centerY" secondItem="UBT-m1-h8R" secondAttribute="centerY" id="RDB-Ko-7Ks"/>
+                <constraint firstItem="oUU-ll-TxA" firstAttribute="centerX" secondItem="UBT-m1-h8R" secondAttribute="centerX" id="hEv-8J-SiP"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="oUU-ll-TxA" id="7Du-tw-ujP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -3,6 +3,9 @@
 혼술하는 사람들을 위한 안주제안!
 (이 프로젝트는 패스트캠퍼스 iOS 3기 해커톤의 결과물입니다.)
 
+**구동영상**
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/Uhteayybdg8)
 
 **About Team**
 

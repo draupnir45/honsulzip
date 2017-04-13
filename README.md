@@ -6,7 +6,7 @@
 **구동영상**은 [여기](https://youtu.be/Uhteayybdg8)에서
 
 **스크린샷**
-
+![스크린샷](/screenshots/honsulzip.gif)
 
 **About Team**
 

@@ -14,7 +14,7 @@
 <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property NSArray *dataArray;
-- (instancetype)initWithDataArray:(NSArray <HSRecipe *> *)dataArray;
+- (instancetype)initWithDataArray:(NSArray <NSNumber *> *)dataArray;
 @property CGSize cellSize;
 
 @end

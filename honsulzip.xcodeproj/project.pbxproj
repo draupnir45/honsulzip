@@ -46,6 +46,10 @@
 		B96B6DAA1E75C8620066C20E /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B96B6DA81E75C8620066C20E /* UICollectionViewLeftAlignedLayout.m */; };
 		B97B6B8F1E7547160025FE3D /* JCRandomRollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B6B8E1E7547160025FE3D /* JCRandomRollLabel.m */; };
 		B98486781E70BCF600813154 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98486771E70BCF600813154 /* DetailViewController.m */; };
+		B986EDD51EA394510081A5B7 /* MyRecipeSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986EDD41EA394510081A5B7 /* MyRecipeSegmentedViewController.m */; };
+		B986EDD81EA395560081A5B7 /* UIColor+HSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B986EDD71EA395560081A5B7 /* UIColor+HSAdditions.m */; };
+		B986EDDB1EA39C630081A5B7 /* FavoriteTabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986EDDA1EA39C630081A5B7 /* FavoriteTabTableViewController.m */; };
+		B986EDDE1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986EDDD1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m */; };
 		B99727811E76C52900F3949C /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B997276C1E76C52900F3949C /* 10.jpg */; };
 		B99727821E76C52900F3949C /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B997276D1E76C52900F3949C /* 11.jpg */; };
 		B99727831E76C52900F3949C /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B997276E1E76C52900F3949C /* 12.jpg */; };
@@ -136,6 +140,14 @@
 		B97B6B8E1E7547160025FE3D /* JCRandomRollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRandomRollLabel.m; sourceTree = "<group>"; };
 		B98486761E70BCF600813154 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B98486771E70BCF600813154 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B986EDD31EA394510081A5B7 /* MyRecipeSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecipeSegmentedViewController.h; sourceTree = "<group>"; };
+		B986EDD41EA394510081A5B7 /* MyRecipeSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecipeSegmentedViewController.m; sourceTree = "<group>"; };
+		B986EDD61EA395560081A5B7 /* UIColor+HSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HSAdditions.h"; sourceTree = "<group>"; };
+		B986EDD71EA395560081A5B7 /* UIColor+HSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HSAdditions.m"; sourceTree = "<group>"; };
+		B986EDD91EA39C630081A5B7 /* FavoriteTabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTabTableViewController.h; sourceTree = "<group>"; };
+		B986EDDA1EA39C630081A5B7 /* FavoriteTabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTabTableViewController.m; sourceTree = "<group>"; };
+		B986EDDC1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecipeCollectionViewController.h; sourceTree = "<group>"; };
+		B986EDDD1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecipeCollectionViewController.m; sourceTree = "<group>"; };
 		B997276C1E76C52900F3949C /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		B997276D1E76C52900F3949C /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		B997276E1E76C52900F3949C /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
@@ -217,6 +229,8 @@
 				B9109D371E9E432000A45311 /* NSMutableAttributedString+JCAdditions.m */,
 				B91C169A1E75891800C9B0DF /* RateView.h */,
 				B91C169B1E75891800C9B0DF /* RateView.m */,
+				B986EDD31EA394510081A5B7 /* MyRecipeSegmentedViewController.h */,
+				B986EDD41EA394510081A5B7 /* MyRecipeSegmentedViewController.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -315,6 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				B93C4FB41E705DB0005FE565 /* AppDelegate.h */,
+				B986EDD61EA395560081A5B7 /* UIColor+HSAdditions.h */,
+				B986EDD71EA395560081A5B7 /* UIColor+HSAdditions.m */,
 				B93C4FB51E705DB0005FE565 /* AppDelegate.m */,
 				B9134AEE1E77D4480019D228 /* Model */,
 				B927A2941E751E55004A5FC3 /* View - Menu1 - Suggest */,
@@ -328,6 +344,10 @@
 				B96B22191E757B840005FE81 /* HSUserData.plist */,
 				B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */,
 				B93C4FBA1E705DB0005FE565 /* Main.storyboard */,
+				B986EDDC1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.h */,
+				B986EDDD1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m */,
+				B986EDD91EA39C630081A5B7 /* FavoriteTabTableViewController.h */,
+				B986EDDA1EA39C630081A5B7 /* FavoriteTabTableViewController.m */,
 				B93C4FBD1E705DB0005FE565 /* Assets.xcassets */,
 				B93C4FBF1E705DB0005FE565 /* LaunchScreen.storyboard */,
 				B93C4FC21E705DB0005FE565 /* Info.plist */,
@@ -460,19 +480,23 @@
 				B927A2971E7522C7004A5FC3 /* OnRowCollectionViewDataSource.m in Sources */,
 				B96B6DAA1E75C8620066C20E /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				B93C4FCD1E705DDF005FE565 /* HSRecipe.m in Sources */,
+				B986EDD51EA394510081A5B7 /* MyRecipeSegmentedViewController.m in Sources */,
 				B91C169C1E75891800C9B0DF /* RateView.m in Sources */,
 				B9134AF21E77D4EE0019D228 /* MyRecipeViewController.m in Sources */,
 				B9C8C9E61E70918D00DB143D /* RandomViewController.m in Sources */,
+				B986EDD81EA395560081A5B7 /* UIColor+HSAdditions.m in Sources */,
 				B9BE2A001E7564CE00D10E02 /* SuggestViewBigHeader.m in Sources */,
 				B927A2B11E7532AA004A5FC3 /* JCRandomRollImageView.m in Sources */,
 				B96B6DA71E75BEE00066C20E /* FilterCollectionViewCell.m in Sources */,
 				B93C4FB91E705DB0005FE565 /* SuggestViewController.m in Sources */,
 				B9CAAFFA1E76B86C00759AB9 /* FilterCollectionReusableView.m in Sources */,
+				B986EDDE1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m in Sources */,
 				B93C4FB61E705DB0005FE565 /* AppDelegate.m in Sources */,
 				B9C064BA1E781A3300B9CB57 /* JCArrayFilter.m in Sources */,
 				B927A2911E751E4B004A5FC3 /* HSCustomCollectionTableViewCell.m in Sources */,
 				B963E28A1E70711000B00B5E /* HSRecipeDataCenter.m in Sources */,
 				B93C4FB31E705DB0005FE565 /* main.m in Sources */,
+				B986EDDB1EA39C630081A5B7 /* FavoriteTabTableViewController.m in Sources */,
 				B96B6DA21E75BE270066C20E /* FilterViewController.m in Sources */,
 				B96B22151E756D6D0005FE81 /* HSTableViewCell.m in Sources */,
 				B9BE2A031E75665300D10E02 /* SuggestViewSmallHeader.m in Sources */,

@@ -41,39 +41,27 @@
     [super viewDidLoad];
     
     self.title = @"맞춤 추천";
-    
-    
-//    self.mainData = [[HSRecipeDataCenter sharedData] recipeDataArray];
-    
+
     self.firstRowDataSource = [[OnRowCollectionViewDataSource alloc] initWithDataArray:@[@7,@4,@6,@15,@11,@19,@25]];
     self.secondRowDataSource = [[OnRowCollectionViewDataSource alloc] initWithDataArray:@[@2,@8,@10,@30,@29,@9,@5]];
     
-    
     [self.navigationController setNavigationBarHidden:YES];
-    
-    
     [self.tableView setBackgroundColor:[UIColor whiteColor]];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
     [self.tableView registerNib:[UINib nibWithNibName:@"SuggestViewSectionBigHeader" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"SuggestViewBigHeader"];
     [self.tableView registerNib:[UINib nibWithNibName:@"SuggestViewSectionSmallHeader" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"SuggestViewSmallHeader"];
-
     [self.tableView registerNib:[UINib nibWithNibName:@"HSTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HSTableViewCell"];
-    
     [self.tableView registerNib:[UINib nibWithNibName:@"HSCustomCollectionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HSCustomCollectionTableViewCell"];
-    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     if (self.filtering) {
-//        NSMutableArray *filteringArray = [self.mainData mutableCopy];
         NSMutableArray *resultArray = [[NSMutableArray alloc] init];
         
         for (NSString *criterion in self.drinkToFilter) {

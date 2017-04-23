@@ -127,4 +127,43 @@
     
 }
 
+- (NSArray *)sortedMyRecipes {
+    NSArray *sortedArray = [self.myRecipes sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        NSNumber *first = [obj1 objectForKey:@"rating"];
+        NSNumber *second = [obj2 objectForKey:@"rating"];
+        return [first compare:second];
+    }];
+    
+    return sortedArray;
+}
+
+- (NSArray *)favoriteDataArray {
+    
+    NSArray *originalArray = @[
+                       @{@"drink":@"맥주",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"소주",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"양주",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"와인",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"막걸리",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"칵테일",@"recipeIDs":[NSMutableArray new]},
+                       @{@"drink":@"소맥",@"recipeIDs":[NSMutableArray new]}
+                       ];
+    NSArray *recipeArray = [[HSRecipeDataCenter sharedData] recipeDataArray];
+    NSMutableArray *mutableArray = [originalArray mutableCopy];
+    for (NSNumber *pk in self.bookmarks) {
+        HSRecipe *item = recipeArray[[pk integerValue]];
+        [[mutableArray[item.drink] objectForKey:@"recipeIDs"] addObject:[NSNumber numberWithInteger:item.recipeID]];
+    }
+    
+    for (NSInteger i = 6; i>=0; i--) {
+        if ([[mutableArray[i] objectForKey:@"recipeIDs"] count] == 0) {
+            [mutableArray removeObject:mutableArray[i]];
+        }
+    }
+
+    
+    return mutableArray;
+    
+}
+
 @end

@@ -34,6 +34,8 @@
 		B93C4FC11E705DB0005FE565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93C4FBF1E705DB0005FE565 /* LaunchScreen.storyboard */; };
 		B93C4FCD1E705DDF005FE565 /* HSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C4FC91E705DDF005FE565 /* HSRecipe.m */; };
 		B93C4FCF1E705DDF005FE565 /* HSRecipeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */; };
+		B949CDB61EACA23800532E8C /* Top3RecipeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B949CDB41EACA23800532E8C /* Top3RecipeCollectionViewCell.m */; };
+		B949CDB71EACA23800532E8C /* Top3RecipeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949CDB51EACA23800532E8C /* Top3RecipeCollectionViewCell.xib */; };
 		B963E28A1E70711000B00B5E /* HSRecipeDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B963E2891E70711000B00B5E /* HSRecipeDataCenter.m */; };
 		B96B22101E7569170005FE81 /* SuggestViewSectionSmallHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96B220F1E7569170005FE81 /* SuggestViewSectionSmallHeader.xib */; };
 		B96B22121E756D130005FE81 /* HSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96B22111E756D130005FE81 /* HSTableViewCell.xib */; };
@@ -71,6 +73,8 @@
 		B99727931E76C52900F3949C /* 28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B997277E1E76C52900F3949C /* 28.jpg */; };
 		B99727941E76C52900F3949C /* 29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B997277F1E76C52900F3949C /* 29.jpg */; };
 		B99727951E76C52900F3949C /* 30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B99727801E76C52900F3949C /* 30.jpg */; };
+		B9AA1A7E1EACCB63008F0533 /* MyRecipeCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA1A7C1EACCB63008F0533 /* MyRecipeCollectionReusableView.m */; };
+		B9AA1A7F1EACCB63008F0533 /* MyRecipeCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AA1A7D1EACCB63008F0533 /* MyRecipeCollectionReusableView.xib */; };
 		B9BE29FD1E7563CF00D10E02 /* SuggestViewSectionBigHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BE29FC1E7563CF00D10E02 /* SuggestViewSectionBigHeader.xib */; };
 		B9BE2A001E7564CE00D10E02 /* SuggestViewBigHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE29FF1E7564CE00D10E02 /* SuggestViewBigHeader.m */; };
 		B9BE2A031E75665300D10E02 /* SuggestViewSmallHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE2A021E75665300D10E02 /* SuggestViewSmallHeader.m */; };
@@ -120,6 +124,9 @@
 		B93C4FC81E705DDF005FE565 /* HSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipe.h; sourceTree = "<group>"; };
 		B93C4FC91E705DDF005FE565 /* HSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipe.m; sourceTree = "<group>"; };
 		B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HSRecipeList.plist; sourceTree = "<group>"; };
+		B949CDB31EACA23800532E8C /* Top3RecipeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Top3RecipeCollectionViewCell.h; sourceTree = "<group>"; };
+		B949CDB41EACA23800532E8C /* Top3RecipeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top3RecipeCollectionViewCell.m; sourceTree = "<group>"; };
+		B949CDB51EACA23800532E8C /* Top3RecipeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Top3RecipeCollectionViewCell.xib; sourceTree = "<group>"; };
 		B963E2881E70711000B00B5E /* HSRecipeDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRecipeDataCenter.h; sourceTree = "<group>"; };
 		B963E2891E70711000B00B5E /* HSRecipeDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRecipeDataCenter.m; sourceTree = "<group>"; };
 		B96B220F1E7569170005FE81 /* SuggestViewSectionSmallHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestViewSectionSmallHeader.xib; sourceTree = "<group>"; };
@@ -169,6 +176,10 @@
 		B997277E1E76C52900F3949C /* 28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 28.jpg; sourceTree = "<group>"; };
 		B997277F1E76C52900F3949C /* 29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 29.jpg; sourceTree = "<group>"; };
 		B99727801E76C52900F3949C /* 30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 30.jpg; sourceTree = "<group>"; };
+		B9AA1A7B1EACCB63008F0533 /* MyRecipeCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecipeCollectionReusableView.h; sourceTree = "<group>"; };
+		B9AA1A7C1EACCB63008F0533 /* MyRecipeCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecipeCollectionReusableView.m; sourceTree = "<group>"; };
+		B9AA1A7D1EACCB63008F0533 /* MyRecipeCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRecipeCollectionReusableView.xib; sourceTree = "<group>"; };
+		B9AA1A801EACD74F008F0533 /* CustomSegmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentDelegate.h; sourceTree = "<group>"; };
 		B9BE29FC1E7563CF00D10E02 /* SuggestViewSectionBigHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestViewSectionBigHeader.xib; sourceTree = "<group>"; };
 		B9BE29FE1E7564CE00D10E02 /* SuggestViewBigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewBigHeader.h; sourceTree = "<group>"; };
 		B9BE29FF1E7564CE00D10E02 /* SuggestViewBigHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewBigHeader.m; sourceTree = "<group>"; };
@@ -344,8 +355,15 @@
 				B96B22191E757B840005FE81 /* HSUserData.plist */,
 				B93C4FCC1E705DDF005FE565 /* HSRecipeList.plist */,
 				B93C4FBA1E705DB0005FE565 /* Main.storyboard */,
+				B9AA1A801EACD74F008F0533 /* CustomSegmentDelegate.h */,
 				B986EDDC1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.h */,
 				B986EDDD1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m */,
+				B9AA1A7B1EACCB63008F0533 /* MyRecipeCollectionReusableView.h */,
+				B9AA1A7C1EACCB63008F0533 /* MyRecipeCollectionReusableView.m */,
+				B9AA1A7D1EACCB63008F0533 /* MyRecipeCollectionReusableView.xib */,
+				B949CDB31EACA23800532E8C /* Top3RecipeCollectionViewCell.h */,
+				B949CDB41EACA23800532E8C /* Top3RecipeCollectionViewCell.m */,
+				B949CDB51EACA23800532E8C /* Top3RecipeCollectionViewCell.xib */,
 				B986EDD91EA39C630081A5B7 /* FavoriteTabTableViewController.h */,
 				B986EDDA1EA39C630081A5B7 /* FavoriteTabTableViewController.m */,
 				B93C4FBD1E705DB0005FE565 /* Assets.xcassets */,
@@ -444,6 +462,7 @@
 				B99727861E76C52900F3949C /* 15.jpg in Resources */,
 				B93C4FBE1E705DB0005FE565 /* Assets.xcassets in Resources */,
 				B99727831E76C52900F3949C /* 12.jpg in Resources */,
+				B9AA1A7F1EACCB63008F0533 /* MyRecipeCollectionReusableView.xib in Resources */,
 				B927A2A51E752F7D004A5FC3 /* 2.jpg in Resources */,
 				B96B221A1E757B840005FE81 /* HSUserData.plist in Resources */,
 				B9CAAFFB1E76B86C00759AB9 /* FilterCollectionReusableView.xib in Resources */,
@@ -455,6 +474,7 @@
 				B99727891E76C52900F3949C /* 18.jpg in Resources */,
 				B99727821E76C52900F3949C /* 11.jpg in Resources */,
 				B997278B1E76C52900F3949C /* 20.jpg in Resources */,
+				B949CDB71EACA23800532E8C /* Top3RecipeCollectionViewCell.xib in Resources */,
 				B997278D1E76C52900F3949C /* 22.jpg in Resources */,
 				B927A2A41E752F7D004A5FC3 /* 1.jpg in Resources */,
 				B927A2AC1E752F7D004A5FC3 /* 9.jpg in Resources */,
@@ -488,6 +508,7 @@
 				B9BE2A001E7564CE00D10E02 /* SuggestViewBigHeader.m in Sources */,
 				B927A2B11E7532AA004A5FC3 /* JCRandomRollImageView.m in Sources */,
 				B96B6DA71E75BEE00066C20E /* FilterCollectionViewCell.m in Sources */,
+				B949CDB61EACA23800532E8C /* Top3RecipeCollectionViewCell.m in Sources */,
 				B93C4FB91E705DB0005FE565 /* SuggestViewController.m in Sources */,
 				B9CAAFFA1E76B86C00759AB9 /* FilterCollectionReusableView.m in Sources */,
 				B986EDDE1EA3B2E10081A5B7 /* MyRecipeCollectionViewController.m in Sources */,
@@ -499,6 +520,7 @@
 				B986EDDB1EA39C630081A5B7 /* FavoriteTabTableViewController.m in Sources */,
 				B96B6DA21E75BE270066C20E /* FilterViewController.m in Sources */,
 				B96B22151E756D6D0005FE81 /* HSTableViewCell.m in Sources */,
+				B9AA1A7E1EACCB63008F0533 /* MyRecipeCollectionReusableView.m in Sources */,
 				B9BE2A031E75665300D10E02 /* SuggestViewSmallHeader.m in Sources */,
 				B927A2921E751E4B004A5FC3 /* HSCollectionViewCell.m in Sources */,
 				B97B6B8F1E7547160025FE3D /* JCRandomRollLabel.m in Sources */,
@@ -623,6 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8KDMCH8V2F;
 				INFOPLIST_FILE = honsulzip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioshack-1team.developed.honsulzip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,6 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8KDMCH8V2F;
 				INFOPLIST_FILE = honsulzip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioshack-1team.developed.honsulzip";
 				PRODUCT_NAME = "$(TARGET_NAME)";

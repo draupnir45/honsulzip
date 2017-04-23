@@ -8,11 +8,20 @@
 
 #import "MyRecipeSegmentedViewController.h"
 #import "UIColor+HSAdditions.h"
+#import "MyRecipeCollectionViewController.h"
+#import "FavoriteTabTableViewController.h"
+#import "DetailViewController.h"
+#import "CustomSegmentDelegate.h"
 
 @interface MyRecipeSegmentedViewController ()
+<CustomSegmentDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *favoriteRecipeButton;
 @property (weak, nonatomic) IBOutlet UIButton *myRecipeButton;
 @property (weak, nonatomic) IBOutlet UIView *customSegmentedControl;
+@property (weak, nonatomic) IBOutlet UIView *favoriteTabViewController;
+@property (weak, nonatomic) IBOutlet UIView *myRecipeTabViewController;
+@property NSInteger recipeIDToShow;
 
 @end
 
@@ -28,6 +37,7 @@
     [self.customSegmentedControl.layer setBorderColor:[[UIColor hs_mainColor] CGColor]];
     [self.customSegmentedControl.layer setCornerRadius:22.0];
     [self.customSegmentedControl.layer setBorderWidth:2.0];
+    
 }
 
 - (void)updateSegment {
@@ -44,6 +54,9 @@
         sender.backgroundColor = [UIColor hs_mainColor];
         self.myRecipeButton.selected = NO;
         self.myRecipeButton.backgroundColor = [UIColor whiteColor];
+        
+        [self.favoriteTabViewController setHidden:NO];
+        [self.myRecipeTabViewController setHidden:YES];
     }
 }
 
@@ -53,17 +66,33 @@
         sender.backgroundColor = [UIColor hs_mainColor];
         self.favoriteRecipeButton.selected = NO;
         self.favoriteRecipeButton.backgroundColor = [UIColor whiteColor];
+        
+        [self.favoriteTabViewController setHidden:YES];
+        [self.myRecipeTabViewController setHidden:NO];
     }
 }
 
-/*
+- (void)goToDetailViewWith:(NSInteger)recipeID {
+    self.recipeIDToShow = recipeID;
+    [self performSegueWithIdentifier:@"detailViewSegue" sender:self];
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"detailViewSegue"]) {
+        DetailViewController *detailViewController = segue.destinationViewController;
+        detailViewController.recipeID = self.recipeIDToShow;
+    } else if ([segue.identifier isEqualToString:@"embedFavoriteTable"]) {
+        FavoriteTabTableViewController *VC = segue.destinationViewController;
+        VC.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"embedMyRecipeCollection"]) {
+        MyRecipeCollectionViewController *VC = segue.destinationViewController;
+        VC.delegate = self;
+    }
 }
-*/
+
 
 @end

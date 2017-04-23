@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomSegmentDelegate.h"
 
 @interface MyRecipeCollectionViewController : UICollectionViewController
+
+@property IBOutlet id <CustomSegmentDelegate> delegate;
+
 
 @end

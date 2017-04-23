@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomSegmentDelegate.h"
 
 @interface FavoriteTabTableViewController : UITableViewController
+
+@property IBOutlet id <CustomSegmentDelegate> delegate;
 
 @end

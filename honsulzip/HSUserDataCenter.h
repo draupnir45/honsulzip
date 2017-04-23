@@ -19,7 +19,6 @@ static NSString * const MYRECIPES_KEY = @"myRecipes";
 @property (readonly) NSMutableArray *myRecipes;
 
 
-
 ///저장된 데이터를 가진 싱글톤 클래스 객체를 반환합니다.
 + (instancetype)sharedData;
 
@@ -32,5 +31,7 @@ static NSString * const MYRECIPES_KEY = @"myRecipes";
 - (void)setStarRatingWithRecipeID:(NSInteger)recipeID rating:(NSInteger)rating;
 
 - (void)fetchRatings;
+- (NSArray *)sortedMyRecipes;
+- (NSArray *)favoriteDataArray;
 
 @end

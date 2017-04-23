@@ -35,16 +35,11 @@
 //                       @{@"drink":@"칵테일",@"recipeIDs":@[@2,@1,@3]},
 //                       @{@"drink":@"소맥",@"recipeIDs":@[@2,@1,@3]}
 //                       ];
-    self.dataArray = [[HSUserDataCenter sharedData] favoriteDataArray];
+
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    NSMutableArray *dataSources = [[NSMutableArray alloc] init];
-    for (NSDictionary *item in self.dataArray) {
-        OnRowCollectionViewDataSource *dataSource = [[OnRowCollectionViewDataSource alloc] initWithDataArray:[item objectForKey:@"recipeIDs"]];
-        [dataSources addObject:dataSource];
-    }
-    self.dataSources = dataSources;
+
     
     [self.tableView registerNib:[UINib nibWithNibName:@"HSCustomCollectionTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HSCustomCollectionTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"SuggestViewSectionSmallHeader" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"SuggestViewSmallHeader"];
@@ -55,6 +50,20 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSMutableArray *dataSources = [[NSMutableArray alloc] init];
+    self.dataArray = [[HSUserDataCenter sharedData] favoriteDataArray];
+    for (NSDictionary *item in self.dataArray) {
+        NSArray *dataArray = [item objectForKey:@"recipeIDs"];
+        OnRowCollectionViewDataSource *dataSource = [[OnRowCollectionViewDataSource alloc] initWithDataArray:dataArray];
+        [dataSources addObject:dataSource];
+    }
+    self.dataSources = dataSources;
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,7 +88,7 @@
     HSCustomCollectionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HSCustomCollectionTableViewCell" forIndexPath:indexPath];
     
     cell.collectionView.delegate = self;
-    cell.collectionView.dataSource = self.dataSources[indexPath.row];
+    cell.collectionView.dataSource = self.dataSources[indexPath.section];
     cell.collectionView.tag = indexPath.row;
     [cell.collectionView setShowsHorizontalScrollIndicator:NO];
     [cell.collectionView registerNib:[UINib nibWithNibName:@"HSCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"HSCollectionViewCell"];

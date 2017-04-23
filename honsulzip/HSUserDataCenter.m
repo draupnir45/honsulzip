@@ -82,14 +82,18 @@
 
 + (NSString *)documentDiretoryPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docuPath = [(NSString *)([paths objectAtIndex:0]) stringByAppendingString:@"/userData.plist"];
+    NSString *docuPath = [(NSString *)([paths objectAtIndex:0]) stringByAppendingString:@"/HSUserData.plist"];
     
     return docuPath;
 }
 
 - (void)addBookmarkWithRecipeID:(NSInteger)recipeID {
-    [self.bookmarks addObject:[NSNumber numberWithInteger:recipeID]];
-    [self saveData];
+    if (![self.bookmarks containsObject:[NSNumber numberWithInteger:recipeID]]) {
+    
+        [self.bookmarks addObject:[NSNumber numberWithInteger:recipeID]];
+        [self saveData];
+    }
+
 }
 
 - (void)removeBookmarkWithRecipeID:(NSInteger)recipeID {
@@ -98,6 +102,13 @@
 }
 
 - (void)setStarRatingWithRecipeID:(NSInteger)recipeID rating:(NSInteger)rating {
+    for (NSDictionary *item in self.myRecipes) {
+        if ([[item objectForKey:@"recipeID"] integerValue] == recipeID) {
+            [self.myRecipes removeObject:item];
+            break;
+        }
+    }
+    
     [self.myRecipes addObject:@{ @"recipeID":[NSNumber numberWithInteger:recipeID], @"rating":[NSNumber numberWithInteger:rating]}];
     [self saveData];
     
@@ -131,7 +142,7 @@
     NSArray *sortedArray = [self.myRecipes sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSNumber *first = [obj1 objectForKey:@"rating"];
         NSNumber *second = [obj2 objectForKey:@"rating"];
-        return [first compare:second];
+        return [second compare:first];
     }];
     
     return sortedArray;
@@ -164,6 +175,14 @@
     
     return mutableArray;
     
+}
+
+- (BOOL)isThisMyRecipe:(NSInteger)recipeID {
+    if ([self.bookmarks containsObject:[NSNumber numberWithInteger:recipeID]]) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end

@@ -39,9 +39,15 @@ static NSString * const cellIdentifier2 = @"HSCollectionViewCell";
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"MyRecipeCollectionReusableView" bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MyRecipeCollectionReusableView"];
     
-    self.sortedMyRecipes = [[HSUserDataCenter sharedData] sortedMyRecipes];
+
     
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.sortedMyRecipes = [[HSUserDataCenter sharedData] sortedMyRecipes];
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -219,7 +225,7 @@ static NSString * const cellIdentifier2 = @"HSCollectionViewCell";
             break;
             
         default:
-            return CGSizeZero;
+            return CGSizeMake(self.collectionView.frame.size.width, 32.f);
             break;
     }
 

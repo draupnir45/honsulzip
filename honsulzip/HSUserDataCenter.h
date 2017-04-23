@@ -1,6 +1,6 @@
 //
 //  JCDataCenter.h
-//  PlistPrac
+//
 //
 //  Created by 박종찬 on 2017. 3. 3..
 //  Copyright © 2017년 Jongchan Park. All rights reserved.
@@ -33,5 +33,6 @@ static NSString * const MYRECIPES_KEY = @"myRecipes";
 - (void)fetchRatings;
 - (NSArray *)sortedMyRecipes;
 - (NSArray *)favoriteDataArray;
+- (BOOL)isThisMyRecipe:(NSInteger)recipeID;
 
 @end

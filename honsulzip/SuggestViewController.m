@@ -245,16 +245,7 @@
         
         cell.recipeID = item.recipeID;
         cell.delegate = self;
-        
-        NSDictionary *data = [[HSUserDataCenter sharedData] userData];
-        NSArray *favArr = [data objectForKey:BOOKMARKS_KEY];
-        if ([favArr containsObject:[NSNumber numberWithInteger:item.recipeID]]) {
-            cell.favorite = YES;
-            [cell.favoriteIcon setSelected:YES];
-        } else {
-            cell.favorite = NO;
-            [cell.favoriteIcon setSelected:NO];
-        }
+        [cell.favoriteIcon setSelected:[[HSUserDataCenter sharedData] isThisMyRecipe:item.recipeID]];
         
         
         
@@ -299,19 +290,7 @@
             
             cell.titleImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",(long)item.recipeID]];
             
-            switch (item.drink) {
-                case HSDrinkSoju:
-                    cell.drinkIconImageView.image = [UIImage imageNamed:@"sojuIcon"];
-                    break;
-                case HSDrinkBeer:
-                    cell.drinkIconImageView.image = [UIImage imageNamed:@"beerIcon"];
-                    break;
-                case HSDrinkWine:
-                    cell.drinkIconImageView.image = [UIImage imageNamed:@"wineIcon"];
-                    break;
-                default:
-                    break;
-            }
+            cell.drinkIconImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"drinkicon%ld",item.drink]];
             
             cell.titleLabel.text = item.name;
             cell.subTitleLabel.text = item.shortDescription;
@@ -341,15 +320,7 @@
             cell.recipeID = item.recipeID;
             cell.delegate = self;
             
-            NSDictionary *data = [[HSUserDataCenter sharedData] userData];
-            NSArray *favArr = [data objectForKey:BOOKMARKS_KEY];
-            if ([favArr containsObject:[NSNumber numberWithInteger:item.recipeID]]) {
-                cell.favorite = YES;
-                [cell.favoriteIcon setSelected:YES];
-            } else {
-                cell.favorite = NO;
-                [cell.favoriteIcon setSelected:NO];
-            }
+            [cell.favoriteIcon setSelected:[[HSUserDataCenter sharedData] isThisMyRecipe:item.recipeID]];
             
             
             

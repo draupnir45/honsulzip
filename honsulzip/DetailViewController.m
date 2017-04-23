@@ -60,6 +60,7 @@
             break;
     }
     
+    
     self.ingrediants.attributedText = [NSMutableAttributedString attrStringWithString:item.ingrediants lineSpacing:4.0 paragraphSpacing:20.0];
     
     self.starRatingView.rating = item.rating;
@@ -68,14 +69,16 @@
     self.starRatingView.maxRating = 5;
     
     self.detailRecipeLabel.attributedText = [NSMutableAttributedString attrStringWithString:item.detail lineSpacing:4.0 paragraphSpacing:20.0];
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.myRecipeButton setSelected:[[HSUserDataCenter sharedData] isThisMyRecipe:self.recipeID]];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
@@ -91,8 +94,11 @@
         [self setBookMark:NO];
     } else {
         [[HSUserDataCenter sharedData] setStarRatingWithRecipeID:self.recipeID rating:(NSInteger)rating];
-        self.myRecipeButton.selected = YES;
-        [self setBookMark:YES];
+        if (!self.myRecipeButton.selected) {
+            self.myRecipeButton.selected = YES;
+            [self setBookMark:YES];
+        }
+
     }
 }
 

@@ -68,7 +68,7 @@
     
     cell.recipeTitleLabel.text = item.name;
     cell.squareThumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",(long)item.recipeID]];
-    cell.tag = collectionView.tag;
+    cell.tag = item.recipeID;
     cell.recipeID = item.recipeID;
     
     return cell;

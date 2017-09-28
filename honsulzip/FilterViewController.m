@@ -136,7 +136,6 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    [(NSString*)[arrayOfStats objectAtIndex:indexPath.row] sizeWithAttributes:NULL]
     UIFont *font = [UIFont systemFontOfSize:17];
     CGSize textSize = [[[[self.dataArray objectAtIndex:indexPath.section] objectForKey:@"items"] objectAtIndex:indexPath.row] sizeWithAttributes:@{NSFontAttributeName:font}];
     

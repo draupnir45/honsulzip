@@ -13,23 +13,6 @@
 		<integer>2000</integer>
 		<key>drink</key>
 		<string>0</string>
-		<key>drinkDict</key>
-		<dict>
-			<key>beer</key>
-			<integer>1</integer>
-			<key>soju</key>
-			<integer>2</integer>
-			<key>wine</key>
-			<integer>0</integer>
-			<key>whiskey</key>
-			<integer>0</integer>
-			<key>matkori</key>
-			<integer>0</integer>
-			<key>somac</key>
-			<integer>2</integer>
-			<key>cocktail</key>
-			<integer>0</integer>
-		</dict>
 		<key>ingrediants</key>
 		<string>돼지고기, 후추, 소금, 마늘, 피망, 대파, 굴소스, 고추, 콩나물</string>
 		<key>detail</key>
